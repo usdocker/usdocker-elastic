@@ -1,0 +1,22 @@
+# Custom ElasticSearch (see documentation)
+
+# X-Pack is preinstalled in this image and is enabled.
+# X-Pack includes a trial license for 30 days.
+# If you have a X-Pach license, comment the line below
+#
+# https://www.elastic.co/guide/en/x-pack/current/security-getting-started.html
+xpack.security.enabled: false
+
+# ---------------------------------------------------------------------
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+bootstrap.memory_lock: true
+
+# minimum_master_nodes need to be explicitly set when bound on a public IP
+# set to 1 to allow single node clusters
+# Details: https://github.com/elastic/elasticsearch/pull/17288
+discovery.zen.minimum_master_nodes: 1
+
+
+# Default settings for backup
+path.repo: ["/usr/share/elasticsearch/data/backup"]

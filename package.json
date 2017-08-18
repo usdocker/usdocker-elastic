@@ -1,0 +1,28 @@
+{
+  "name": "usdocker-elastic",
+  "version": "1.0.0",
+  "description": "USDocker script for Elastic stack - Elasticsearch and Kibana",
+  "main": "usdocker_elastic.js",
+  "scripts": {
+    "test": "./node_modules/.bin/eslint *.js",
+    "postinstall": "./node_modules/.bin/usdocker -rv"
+  },
+  "keywords": [
+    "usdocker",
+    "elastic.co",
+    "kibana",
+    "elasticsearch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/usdocker/usdocker-elastic.git"
+  },
+  "author": "joao@byjg.com.br",
+  "license": "MIT",
+  "dependencies": {
+    "usdocker": "^1.0.*"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1"
+  }
+}
