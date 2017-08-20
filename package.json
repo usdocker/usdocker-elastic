@@ -5,7 +5,8 @@
   "main": "usdocker_elastic.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint *.js",
-    "postinstall": "./node_modules/.bin/usdocker -rv"
+    "preinstall": "npm i -g usdocker",
+    "postinstall": "usdocker -rv"
   },
   "keywords": [
     "usdocker",
@@ -19,9 +20,6 @@
   },
   "author": "joao@byjg.com.br",
   "license": "MIT",
-  "dependencies": {
-    "usdocker": "^1.0.4"
-  },
   "devDependencies": {
     "eslint": "^4.5.0"
   }
