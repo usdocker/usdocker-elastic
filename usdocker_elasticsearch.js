@@ -61,7 +61,7 @@ module.exports = {
         config.setEmpty('nodeIngest', 'true');
         config.setEmpty('ignoreWarning', 'false');
 
-        config.copyToUserDir(__dirname + '/elasticsearch/conf');
+        config.copyToUserDir(path.join(__dirname, 'elasticsearch', 'conf'));
         usdocker.fsutil().makeDirectory(config.get('folder'));
         callback(null, 'setup loaded for ' + SCRIPTNAME);
 

@@ -1,6 +1,7 @@
 'use strict';
 
 const usdocker = require('usdocker');
+const path = require('path');
 
 const SCRIPTNAME = 'kibana';
 
@@ -31,7 +32,7 @@ module.exports = {
         config.setEmpty('port', 5601);
         config.setEmpty('elasticsearchUrl', 'http://elasticsearch-container:9200');
 
-        config.copyToUserDir(__dirname + '/kibana/conf');
+        config.copyToUserDir(path.join(__dirname, 'kibana', 'conf'));
         usdocker.fsutil().makeDirectory(config.get('folder'));
 
         callback(null, 'setup loaded for ' + SCRIPTNAME);
