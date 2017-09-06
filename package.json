@@ -1,6 +1,6 @@
 {
   "name": "@usdocker/elastic",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "USDocker script for Elastic stack - Elasticsearch and Kibana",
   "main": "usdocker_elastic.js",
   "scripts": {
