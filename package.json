@@ -1,11 +1,10 @@
 {
-  "name": "usdocker-elastic",
+  "name": "@usdocker/elastic",
   "version": "1.0.5",
   "description": "USDocker script for Elastic stack - Elasticsearch and Kibana",
   "main": "usdocker_elastic.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint *.js",
-    "preinstall": "npm i -g usdocker",
     "postinstall": "usdocker -rv"
   },
   "keywords": [

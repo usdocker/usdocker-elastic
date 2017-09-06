@@ -11,7 +11,7 @@ You don't have know docker to use this solution.
 ## Installing
 
 ```bash
-npm install -g usdocker-elastic
+npm install -g @usdocker/usdocker @usdocker/elastic
 ```
 
 ## Using
