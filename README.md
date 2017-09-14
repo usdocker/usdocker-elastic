@@ -13,6 +13,7 @@ You don't have know docker to use this solution.
 ```bash
 npm install -g @usdocker/usdocker # Install it first
 npm install -g @usdocker/elastic
+usdocker -r    # Update USDocker database
 ```
 
 ## Using
